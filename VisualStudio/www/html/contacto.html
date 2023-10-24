@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Mi primera web</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="noticias.html">NOTICIAS</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>Localización</h2>
+            <h3>Dónde estamos</h3>
+            <!--Inserción de mapas-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.6045619605907!2d-15.449110924718461!3d28.12807837594387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40951c8a18a0f3%3A0x142cb0d09763a325!2sIES%20El%20Rinc%C3%B3n!5e0!3m2!1ses!2ses!4v1696193638987!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+        <article>
+            <h2>Contacto conmigo</h2>
+            <!--Formulario-->
+            <form action="" method="post">
+                <!--Placeholder: aparece en sombreado lo que debes introducir en el recuadro-->
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+                <!--Type text para introducir texto-->
+                <!--Type email para introducir formato de dirección de correo electrónico-->
+                <input type="email" id="mail" name="mail" placeholder="Email" required="required" />
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto" maxlength="20" />
+                <!--Textarea para añadir comentario-->
+                <!--Required para establecer un campo obligatorio-->
+                <textarea id="comentario" name="comentario" required="required"></textarea>
+                <!--Type checkbox para aceptar términos-->
+                <input type="checkbox" id="acepto" name="acepto" />
+                <label for="acepto">Acepto términos y recibir información</label>
+                <!--Type submit para enviar-->
+                <input type="submit" id="enviar" value="enviar" />
+            </form>
+        </article>
+ 
+    </section>
+    <footer>
+        <p>Copyright 2324 - Juanjo Cerpa</p>
+    </footer>
+</body>
+</html>

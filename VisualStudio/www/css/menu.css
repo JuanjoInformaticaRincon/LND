@@ -1,0 +1,32 @@
+nav ul{
+    list-style: none;
+    width: 900px;
+    background-color: #60c593;
+    padding: 2px;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul li{
+    /*border: 1px solid black;*/
+    background-color: #9bdbbb;
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block; /*Para que sea un menú a lo largo (horizontal)*/
+}
+
+nav ul li a{
+    display: block; /*Para que el link abarque toda la fila, no sólo en la palabra*/
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    /*transition: margin-left 1.5s;*/
+    transition: background-color 1.5s;
+
+}
+
+nav ul li a:hover{
+    /*margin-left: 30px;*/
+    background-color: #c1e7d4;
+}

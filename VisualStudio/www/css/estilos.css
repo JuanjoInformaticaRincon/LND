@@ -1,0 +1,71 @@
+/*header*/
+header{
+    border: 1px solid black;
+    /*dashed en vez de solid para que sea discontinuo*/
+    padding: 50px;
+    margin: 40px;
+    background-color: antiquewhite;
+    background-image: url("../imgs/newspaper-154444_640.png");
+    /*background-repeat: no-repeat; para no repetir la imagen*/
+    background-position-x: center;
+    background-position-y: center;
+    /*width:500 px para establecer ancho*/
+}
+
+nav ul li{
+    display: inline-block;/*para que los elementos de la lista los muestre en línea*/
+    width: 100px;
+    border: 1px solid black;
+}
+
+/*Selector universal*/
+*{
+    /*margin:0;*/
+    /*border:0;*/
+}
+
+/*Selector de etiqueta*/
+p{
+    color:red;
+}
+h2{
+    color:blue;
+}
+/*Asignar el mismo estilo a varios selectores*/
+h3, h4{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+h3{
+    border-bottom: 1px solid black;
+}
+/*Etiquetas descendientes*/
+p strong{
+    color:cyan;
+}
+/*Selector de clase*/
+.destacado{
+    color:red;
+    text-transform: uppercase;
+}
+p.destacado{
+    border-bottom: 1px solid black;
+}
+/*Selector de identificador*/
+#nombre{
+    color: darkorange;
+}
+/*Selector de hijo*/
+p > strong{
+    color: gold;
+}
+/*Selector adyacente*/
+h2+h3{
+    color: indianred;
+}
+/*Selector de atributo*/
+a[href="http://www.google.es"]{
+    color:indigo;
+
+}

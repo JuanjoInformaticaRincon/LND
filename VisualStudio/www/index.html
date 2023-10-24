@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <!--Vinculación a la hoja de estilos externa-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Hoja de estilos en el mismo documento-->
+    <style type="text/css">
+        h1{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi primera web</h1>
+    </header>
+    <nav>
+        <!--Listas desordenadas "ul"; Listas ordenadas "ol"-->
+        <ul>
+            <!--Enlaces para navegar entre distintas páginas de mi aplicación-->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="html/servicios.html">SERVICIOS</a></li>
+            <li><a href="html/contacto.html">CONTACTO</a></li>
+            <li><a href="html/noticias.html">NOTICIAS</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <!--Aplicar estilos directamente en los elementos html (no recomendable)-->
+            <h2 style="color:blue"><strong>Instalaciones</strong></h2>
+            <p><strong>Lorem ipsum</strong> dolor <a href="#">HOLA <strong>ADIÓS</strong></a> sit amet consectetur adipisicing elit. Modi incidunt quod ex est non, repellat veniam minus labore dolorem consequuntur aliquid quia rem ut suscipit asperiores distinctio repudiandae laudantium temporibus.</p>
+            <!--Inserción de imágenes-->
+            <p><img src="imgs/francis-quadrangle-1618326_640.jpg" alt=""></p>
+        </article>
+        <article>
+            <h2 style="font-family:verdana";>Más información</h2>
+            <h3>Noticias actuales</h3>
+            <p><strong>Lorem ipsum</strong> dolor sit, amet consectetur adipisicing elit. Et magni cum facere doloremque ab veritatis nemo error distinctio laudantium ipsum non inventore, sit earum! Quae eligendi repellat quos quia reiciendis.</p>
+            <p><img src="imgs/newspaper-154444_640.png" alt=""></p>
+        </article>
+        <article>
+            <h2 class="destacado">Productos</h2>
+            <p id="nombre"><strong>Lorem ipsum</strong> dolor sit, amet consectetur adipisicing elit. A praesentium quasi soluta molestiae perferendis dolorum debitis! Excepturi qui minus itaque cupiditate natus culpa eos, consequatur hic officiis ut suscipit aliquam?</p>
+            <p><img src="imgs/zero-2729769_640.png" alt=""></p>
+        </article>
+    </section>
+    <aside>
+        <h4 class="destacado">Ofertas</h4>
+        <p class="destacado"><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Officiis fugiat reprehenderit laudantium nostrum assumenda consequatur, aliquid veritatis excepturi dignissimos ipsa deleniti omnis eligendi labore magni. Exercitationem sunt quam distinctio laborum.</p>
+    </aside>
+    <footer>
+        <p>Copyright 2324 - Juanjo Cerpa</p>
+    </footer>
+</body>
+</html>

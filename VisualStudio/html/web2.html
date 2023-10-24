@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi Web 2</h1>
+    <p>
+        <!--<a href="index.html"><img src="imgs/fire-8230528_1280.jpg" /></a>-->
+        <a href="index.html">Home</a>
+        <!--HOME en vez de foto o viceversa-->
+    </p>
+    <p>Elige un trabajo que ames, y no tendrás que trabajar un solo día de tu vida (Confucio).</p>
+    <h2>Mi Contacto</h2>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" maxlength="10" placeholder="Introduce tu nombre" required="required" />
+            <!--Type password para contraseñas que no sean visibles al insertarlas-->
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" maxlength="6" />
+            <label for="mail">Introduce tu email</label>
+            <input type="email" id="mail" name="mail" />
+            <label for="edad">Introduce tu edad</label>
+            <!--Type number para números-->
+            <input type="number" id="edad" name="edad" />
+            <!--Type range para establecer un rango entre mínimo y máximo-->
+            <input type="range" id="rango" name="rango" />
+            <!--Type color para elegir entre paleta de colores-->
+            <input type="color" id="color" name="color" />
+            <!--Type date para fechas en formato dd/mm/aa-->
+            <input type="date" id="cumple" name="cumple" />
+            <input type="checkbox" id="lopd" name="lopd" /><label for="lopd">Acepto términos</label>
+        </fieldset>
+        <fieldset>
+            <legend>Preguntas generales</legend>
+            <h4>¿Estás matriculado?</h4>
+            <!--Type radio para elegir una de varias opciones-->
+            <input type="radio" id="si" name="encuesta" checked="checked" /><label for="si">Sí</label>
+            <input type="radio" id="no" name="encuesta" /><label for="no">No</label>
+ 
+
+            <h4>¿Estás repitiendo curso?</h4>
+            <input type="radio" id="p2si" name="repetidor" checked="checked" /><label for="si">Sí</label>
+            <input type="radio" id="p2no" name="repetidor" /><label for="no">No</label>
+
+            <h5>Opinión</h5>
+            <label for="comentario">Introduce tu comentario</label>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        </fieldset>
+        
+        <h5>Otros elementos</h5>
+        <!--Type file para subir ficheros-->
+        <input type="file" id="fichero" name="fichero" />
+
+        <h5>Módulos</h5>
+        <label for="modulos">Selecciona tus módulos:</label>
+        <!--Select para elegir entre opciones-->
+        <!--podemos quitar el size y el multiple-->
+        <select id="modulos" name="modulos" size="4" multiple="multiple">
+            <option value="m1">Módulo 1: Sistemas</option>
+            <option value="m2">Módulo 2: BBDD</option>
+            <option value="m3">Módulo 3: LND</option>
+            <option value="m4">Módulo 4: PRO</option>
+            <option value="m5">Módulo 5: FOL</option>
+        </select>
+
+        <h5>Software</h5>
+        <label for="soft">Selecciona el software que utilizas:</label>
+        <select id="soft" name="soft" size="4" multiple="multiple">
+            <optgroup label="Sistemas Operativos">
+                <option value="win">Windows</option>
+                <option value="lin">Linux</option>
+                <option value="mac">Mac</option>
+            </optgroup>
+            <optgroup label="Navegadores">
+                <option value="saf">Safari</option>
+                <option value="op">Opera</option>
+                <option value="fir">Firefox</option>
+            </optgroup>
+        </select>
+
+
+        <input type="submit" id="enviar" value="validar" />
+        <input type="reset" id="borrar" value="borrar datos" />
+    </form> 
+</body>
+</html>

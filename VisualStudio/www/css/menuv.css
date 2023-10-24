@@ -1,0 +1,27 @@
+nav ul{
+    list-style: none;/* 1ºpara quitar la bolita de elementos de una lista*/
+    width: 300px; /*3º*/
+    background-color: #2a7348;/*4º*/
+    padding: 2px; /*5º y 6º porque al principio metimos left y right*/
+}
+
+nav ul li{
+    /*border: 1px solid black;*//*2ºahora veo el contenedor de cada li*//*8ºComentamos el border*/
+    /*ahora retoco el ancho del ul*/
+    background-color: #4a9c6c;/*7º*/
+    margin: 5px; /*8º*/
+}
+
+nav ul li a{
+    display: block; /*9º todo el contenedor es link*/
+    color: white; /*10º*/
+    text-transform: uppercase;/*11º*/
+    text-decoration: none; /*12º le quitamos el subrayado*/
+    transition: margin-left 1.5s; /*14º*/
+    transition: background-color 1.5s;/*16º*/
+}
+
+nav ul li a:hover{
+    margin-left: 10px; /*13º*/
+    background-color: #69c38e;/*15º*/
+}

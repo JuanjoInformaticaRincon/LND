@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <!--Ahora vamos a hacer un DTD -->
+     <!DOCTYPE alumnos [
+     <!--+ una o infinitas veces
+         * cero o infinitas veces-->
+         <!ELEMENT alumnos (alumno*)>
+         <!ELEMENT alumno (nombre,apellido,ciclo,(nota_media|nota_final))>
+         <!ATTLIST alumno expediente CDATA #REQUIRED>
+         <!ELEMENT nombre (#PCDATA)>
+         <!ELEMENT apellido (#PCDATA)>
+         <!ELEMENT ciclo (#PCDATA)>
+         <!ELEMENT nota_media (#PCDATA)>
+         <!ELEMENT nota_final (#PCDATA)>
+     ]>
+<alumnos>
+    <!--
+        ESto sería un comentario
+        Alumno:
+        Nombre
+        Apellido
+        Ciclo
+        Numero expediente
+        Nota media
+     -->
+
+
+     <alumno expediente = "A001">
+        <nombre>Juanjo</nombre>
+        <apellido>Cerpa</apellido>
+        <ciclo>DAW</ciclo>
+        <nota_media>7</nota_media>
+     </alumno>
+
+     <alumno expediente = "A002">
+        <nombre>Roque</nombre>
+        <apellido>Arencibia</apellido>
+        <ciclo>ASIR</ciclo>
+        <nota_final>8</nota_final>
+     </alumno>
+</alumnos>
