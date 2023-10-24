@@ -17,8 +17,8 @@ nav ul li a{
     color: white; /*10º*/
     text-transform: uppercase;/*11º*/
     text-decoration: none; /*12º le quitamos el subrayado*/
-    transition: margin-left 1.5s; /*14º*/
-    transition: background-color 1.5s;/*16º*/
+    transition-property: margin-left, background-color;
+    transition-duration: 1.5s;
 }
 
 nav ul li a:hover{
